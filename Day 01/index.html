@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Day 01 Nav bar and form -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!----------------- navigation bar ---------------------->
+    <nav>
+        <ul>
+            <li><a href="swork">See how it works</a></li>
+            <li><a href="snow">shop now</a></li>
+            <li><a href="lmore">learn more</a></li>
+            <li><a href="vworld">virtual world</a></li>
+        </ul>
+        <button class="nav-btn">Pro site</button>
+    </nav>
+
+    <!-----------------form ---------------------->
+    <div id="connect">
+        <form action="", method="post">
+            <div class="input-feild">
+                <input type="text" placeholder="First Name" name="fname">
+                <input type="text" placeholder="Last Name" name="lname">
+            </div>
+            <input type="email" placeholder="Email" name="email">
+            <input type="tel" placeholder="Phone Number (Optional)" name="phone" id="phone-no">    
+            
+            <select id="topic" name="topic" required>
+                <option value="" disabled selected>Select your topic</option>
+                <option value="support">Customer Support</option>
+                <option value="order">Order Issue</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            
+            <textarea name="message" placeholder="Message" id=""></textarea>
+            <button class="form-btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>

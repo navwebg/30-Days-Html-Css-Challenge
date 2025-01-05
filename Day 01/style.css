@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Meow+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gabarito", serif;
+}
+
+html,body{
+    background-color: grey;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* --------------- navigation bar --------------------*/
+
+nav{
+    background-color: rgb(243, 243, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px ;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    width: auto;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    padding:8px 13px;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: rgb(244, 132, 149);
+    color: white;
+}
+
+a[href="swork"] {
+    color: rgb(245, 66, 96);
+}
+
+nav .nav-btn{
+    background-color:  rgb(255, 110, 132);
+    padding:10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* --------------- form --------------------*/
+
+#connect{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 124, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ form{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+ }
+
+.input-feild{
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 15px; 
+}
+
+.input-feild input{
+    padding: 10px 200px 10px 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black;  
+}
+
+input[type="email"], input[type="tel"], textarea, select{
+    color: black;
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 15px; /* Space after each of these inputs */
+}
+textarea{
+    height: 100px;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;  
+    border: 1px solid rgb(255, 0, 0); 
+}
+
+select:invalid {
+    color: grey; 
+}
+
+select option {
+    color: black;
+}
+
+.form-btn{
+    margin-top: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
